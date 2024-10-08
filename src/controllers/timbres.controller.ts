@@ -7,6 +7,6 @@ export class TimbreController {
 
   @Get('/')
   getTimbres() {
-    return this.timbreService.getTimbre()
+    return this.timbreService.findAll()
   }
 }

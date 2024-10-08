@@ -6,7 +6,7 @@ import { TimbreRepository } from 'src/repositories/TimbreRepository';
 export class TimbreService {
   constructor(private readonly timbreRepository: TimbreRepository){}
 
-  getTimbre() {
+  async findAll() {
     return this.timbreRepository.getAllTimbres()
   }
 }
